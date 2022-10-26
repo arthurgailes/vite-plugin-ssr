@@ -24,12 +24,12 @@ function ClientSideComponent() {
   const isBrowser = typeof window !== 'undefined'
   const isNodejs = !isBrowser
 
-  // We skip rendering the interactive map on the server-side (SSR'ing a map is mostly useless).
+  // Render a placeholder on the server
   if (isNodejs) {
     return <Loading />
   }
 
-  // We lazily load `<SomeHeavyMapComponent>`
+  // We lazily load the client-side component
   const Counter = React.lazy(() => import('./Counter'))
   return (
     <React.Suspense fallback={<Loading />}>
