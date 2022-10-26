@@ -21,14 +21,6 @@ function Page() {
 }
 
 function ClientSideComponent() {
-  const isBrowser = typeof window !== 'undefined'
-  const isNodejs = !isBrowser
-
-  // Render a placeholder on the server
-  if (isNodejs) {
-    return <Loading />
-  }
-
   // We lazily load the client-side component
   const Counter = React.lazy(() => import('./Counter'))
   return (

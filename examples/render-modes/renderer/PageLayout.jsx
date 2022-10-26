@@ -23,7 +23,7 @@ function PageLayout({ children }) {
           <a className="navitem" href="/ssr">
             SSR
           </a>
-          <a className="navitem" href="/ssr">
+          <a className="navitem" href="/ssr-client">
             SSR + Client
           </a>
         </Sidebar>
