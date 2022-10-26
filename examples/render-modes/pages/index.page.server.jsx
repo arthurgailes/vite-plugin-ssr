@@ -17,6 +17,10 @@ function Page() {
         <li>
           <a href="/ssr">SSR</a>. Rendered to HTML and hydrated in the browser.
         </li>
+        <li>
+          <a href="/ssr-client">SSR + Client Component</a>. Rendered to HTML and hydrated in the browser, dynamically
+          importing client-side components.
+        </li>
       </ul>
     </>
   )
