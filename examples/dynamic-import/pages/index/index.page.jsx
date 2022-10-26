@@ -12,7 +12,7 @@ function Page() {
       <ul>
         <li>Rendered to HTML and hydrated in the browser.</li>
         <li>
-          Interactive. <ClientSideComponent />
+          Interactive - only loaded on client: <ClientSideComponent />
         </li>
       </ul>
       <p className="colored ssr">Blue text.</p>

@@ -19,7 +19,10 @@ async function render(pageContext) {
     pageHtml = await renderToStream(
       <PageLayout>
         <Page {...pageProps} />
-      </PageLayout>
+      </PageLayout>,
+      // We don't need streaming for a pre-rendered app.
+      // (We still use react-streaming to enable <Suspsense>.)
+      { disable: true }
     )
   }
 

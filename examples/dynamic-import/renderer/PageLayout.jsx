@@ -7,26 +7,6 @@ function PageLayout({ children }) {
   return (
     <React.StrictMode>
       <Layout>
-        <Sidebar>
-          <a className="navitem" href="/">
-            <b>Render Modes</b>
-          </a>
-          <a className="navitem" href="/html-only">
-            HTML only
-          </a>
-          <a className="navitem" href="/spa">
-            SPA
-          </a>
-          <a className="navitem" href="/html-js">
-            HTML + JS
-          </a>
-          <a className="navitem" href="/ssr">
-            SSR
-          </a>
-          <a className="navitem" href="/ssr-client">
-            SSR + Client
-          </a>
-        </Sidebar>
         <Content>{children}</Content>
       </Layout>
     </React.StrictMode>
